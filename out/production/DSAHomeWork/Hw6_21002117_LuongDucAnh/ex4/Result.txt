@@ -1,0 +1,39 @@
+n = 1000
+Inserting 1000 entries into UnsortedArrayPriorityQueue took 557000 nanoseconds
+Inserting 1000 entries into SortedArrayPriorityQueue took 7463900 nanoseconds
+Inserting 1000 entries into UnsortedLinkedPriorityQueue took 961100 nanoseconds
+Inserting 1000 entries into SortedLinkedPriorityQueue took 4400900 nanoseconds
+Removing 1000 entries from UnsortedArrayPriorityQueue took 12085700 nanoseconds
+Removing 1000 entries from SortedArrayPriorityQueue took 150100 nanoseconds
+Removing 1000 entries from UnsortedLinkedPriorityQueue took 14494000 nanoseconds
+Removing 1000 entries from SortedLinkedPriorityQueue took 214700 nanoseconds
+
+n = 10000
+Inserting 10000 entries into UnsortedArrayPriorityQueue took 1260400 nanoseconds
+Inserting 10000 entries into SortedArrayPriorityQueue took 142447300 nanoseconds
+Inserting 10000 entries into UnsortedLinkedPriorityQueue took 888900 nanoseconds
+Inserting 10000 entries into SortedLinkedPriorityQueue took 122745600 nanoseconds
+Removing 10000 entries from UnsortedArrayPriorityQueue took 259020200 nanoseconds
+Removing 10000 entries from SortedArrayPriorityQueue took 441500 nanoseconds
+Removing 10000 entries from UnsortedLinkedPriorityQueue took 266662300 nanoseconds
+Removing 10000 entries from SortedLinkedPriorityQueue took 860100 nanoseconds
+
+n = 100000
+Inserting 100000 entries into UnsortedArrayPriorityQueue took 4173400 nanoseconds
+Inserting 100000 entries into SortedArrayPriorityQueue took 0:00:20.480
+Inserting 100000 entries into UnsortedLinkedPriorityQueue took 12223700 nanoseconds
+Inserting 100000 entries into SortedLinkedPriorityQueue took 0:00:31.098
+Removing 100000 entries from UnsortedArrayPriorityQueue took 0:00:26.584
+Removing 100000 entries from SortedArrayPriorityQueue took 676700 nanoseconds
+Removing 100000 entries from UnsortedLinkedPriorityQueue took 0:00:27.634
+Removing 100000 entries from SortedLinkedPriorityQueue took 8206300 nanoseconds
+
+n = 1000000
+Inserting 1000000 entries into UnsortedArrayPriorityQueue took 32050600 nanoseconds
+Inserting 1000000 entries into SortedArrayPriorityQueue took 1:11:29.130
+Inserting 1000000 entries into UnsortedLinkedPriorityQueue took 158894500 nanoseconds
+Inserting 1000000 entries into SortedLinkedPriorityQueue took 1:50:54.781
+Removing 1000000 entries from UnsortedArrayPriorityQueue took 0:57:19.575
+Removing 1000000 entries from SortedArrayPriorityQueue took 6272200 nanoseconds
+Removing 1000000 entries from UnsortedLinkedPriorityQueue took 1:15:31.500
+Removing 1000000 entries from SortedLinkedPriorityQueue took 17978700 nanoseconds

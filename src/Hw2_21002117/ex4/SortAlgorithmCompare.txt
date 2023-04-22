@@ -1,0 +1,78 @@
+Chú thích:
+- Thuật toán BubbleSort ở đây sẽ dừng khi không có lần đổi chỗ nào trong 1 vòng lặp
+- Thời gian chạy đã được loại bỏ việc đến số lần so sánh, đổi chỗ cũng như in ra mảng
+
+
+Trường hợp 1: Mảng sắp xếp theo thứ tự tăng dần
+++++++++++++++++++++++++++++++++++++++++++++++++
+Mảng ban đầu: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17, 18, 19, 20}
++++++++++++++++
+1) Bubble Sort
+Number of comparisons 19
+Number of swaps: 0
+Execution time: 3300ns
++++++++++++++++++
+2) Selection Sort
+Number of comparisons 190
+Number of swaps: 0
+Execution time: 6200ns
++++++++++++++++++
+3) Insertion Sort
+Number of comparisons 19
+Number of swaps: 0
+Execution time: 4100ns
++++++++++++++++++++++++++
+Nhận xét: Trong trường hợp này BubbleSort cho số lần so sánh, sắp xếp cũng như thời gian tốt nhất
+
+-----------------------------------------------------------------------------------------
+
+Trường hợp 2: Mảng sắp xếp theo thứ tự giảm dần
+++++++++++++++++++++++++++++++++++++++++++++++++
+Mảng ban đầu: {20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
++++++++++++++++
+1) Bubble Sort
+Number of comparisons 190
+Number of swaps: 190
+Execution time: 13300ns
++++++++++++++++++
+2) Selection Sort
+Number of comparisons 190
+Number of swaps: 10
+Execution time: 9700ns
++++++++++++++++++
+3) Insertion Sort
+Number of comparisons 190
+Number of swaps: 190
+Execution time: 9200ms
++++++++++++++++++++++++
+Nhận xét: 
+- Cả ba cho số lần so sánh như nhau
+- SelectionSort có số lần đổi chỗ ít nhất
+- InsertionSort cho thời gian chạy tốt nhất
+
+-----------------------------------------------------------------------------------------
+
+Trường hợp 3: Mảng 1000 phần tử ngẫu nhiên trong khoảng -1000 đến 1000, random seed = 42
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1) Bubble Sort
+Number of comparisons 499065
+Number of swaps: 245885
+Execution time: 47516000ns
++++++++++++++++++
+2) Selection Sort
+Number of comparisons 499500
+Number of swaps: 985
+Execution time: 2659000ns
++++++++++++++++++
+3) Insertion Sort
+Number of comparisons 246878
+Number of swaps: 245885
+Execution time: 2068700ms
++++++++++++++++++++++++
+Nhận xét:
+- Về số lần so sánh (theo thứ tự tốt nhất đến tệ nhất): InsertionSort, BubbleSort, SelectionSort
+- Về số lần đổi chỗ (theo thứ tự tốt nhất đến tệ nhất): SelectionSort, InsertionSort, BubbleSort
+- Về thời gian chạy (theo thứ tự tốt nhất đến tệ nhất): InsertionSort,> SelectionSort, BubbleSort
+
+-----------------------------------------------------------------------------------------------
+Kết luận: Qua 3 trường hợp, có thể thấy InsertionSort cho hiệu quả tốt nhất.
