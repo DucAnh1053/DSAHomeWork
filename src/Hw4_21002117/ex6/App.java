@@ -89,43 +89,23 @@ public class App extends javax.swing.JFrame implements Runnable {
 
                 deskNo1End.setText("Kết thúc giao dịch");
                 deskNo1End.setEnabled(false);
-                deskNo1End.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                deskNo1EndActionPerformed(evt);
-                        }
-                });
+                deskNo1End.addActionListener(this::deskNo1EndActionPerformed);
 
                 deskNo2End.setText("Kết thúc giao dịch");
                 deskNo2End.setEnabled(false);
-                deskNo2End.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                deskNo2EndActionPerformed(evt);
-                        }
-                });
+                deskNo2End.addActionListener(this::deskNo2EndActionPerformed);
 
                 deskNo3End.setText("Kết thúc giao dịch");
                 deskNo3End.setEnabled(false);
-                deskNo3End.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                deskNo3EndActionPerformed(evt);
-                        }
-                });
+                deskNo3End.addActionListener(this::deskNo3EndActionPerformed);
 
                 deskNo4End.setText("Kết thúc giao dịch");
                 deskNo4End.setEnabled(false);
-                deskNo4End.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                deskNo4EndActionPerformed(evt);
-                        }
-                });
+                deskNo4End.addActionListener(this::deskNo4EndActionPerformed);
 
                 deskNo5End.setText("Kết thúc giao dịch");
                 deskNo5End.setEnabled(false);
-                deskNo5End.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                deskNo5EndActionPerformed(evt);
-                        }
-                });
+                deskNo5End.addActionListener(this::deskNo5EndActionPerformed);
 
                 deskNo1Status.setForeground(new java.awt.Color(0, 153, 0));
                 deskNo1Status.setText("Bàn trống!");
@@ -143,11 +123,7 @@ public class App extends javax.swing.JFrame implements Runnable {
                 deskNo5Status.setText("Bàn trống!");
 
                 addGuest.setText("Khách đến nhận số");
-                addGuest.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                addGuestActionPerformed(evt);
-                        }
-                });
+                addGuest.addActionListener(this::addGuestActionPerformed);
 
                 GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
                 jPanel1.setLayout(jPanel1Layout);

@@ -90,7 +90,7 @@ public class Maze extends JPanel implements ActionListener {
           setCellSize();
           setPreferredSize(new Dimension(cellSize * mazeLayout.size(), cellSize * mazeLayout.get(0).size()));
           setBackground(Color.BLACK);
-          timer = new Timer(60, this);
+          timer = new Timer(0, this);
           timer.start();
      }
 

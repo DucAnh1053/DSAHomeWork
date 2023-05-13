@@ -61,29 +61,21 @@ public class PriorityQueueTest {
           UnsortedLinkedPriorityQueue<Integer, Integer> queue3 = new UnsortedLinkedPriorityQueue<>();
           SortedLinkedPriorityQueue<Integer, Integer> queue4 = new SortedLinkedPriorityQueue<>();
           System.out.println("Inserting elements into UnsortedArrayPriorityQueue...");
-          fileWriter.write("Inserting %d entries into UnsortedArrayPriorityQueue took %s\n"
-                  .formatted(length, measureInsertTime(queue1, arr)));
+          fileWriter.write("Inserting %d entries into UnsortedArrayPriorityQueue took %s\n".formatted(length, measureInsertTime(queue1, arr)));
           System.out.println("Inserting elements into SortedArrayPriorityQueue...");
-          fileWriter.write("Inserting %d entries into SortedArrayPriorityQueue took %s\n"
-                  .formatted(length, measureInsertTime(queue2, arr)));
+          fileWriter.write("Inserting %d entries into SortedArrayPriorityQueue took %s\n".formatted(length, measureInsertTime(queue2, arr)));
           System.out.println("Inserting elements into UnsortedLinkedPriorityQueue...");
-          fileWriter.write("Inserting %d entries into UnsortedLinkedPriorityQueue took %s\n"
-                  .formatted(length, measureInsertTime(queue3, arr)));
+          fileWriter.write("Inserting %d entries into UnsortedLinkedPriorityQueue took %s\n".formatted(length, measureInsertTime(queue3, arr)));
           System.out.println("Inserting elements into SortedLinkedPriorityQueue...");
-          fileWriter.write("Inserting %d entries into SortedLinkedPriorityQueue took %s\n"
-                  .formatted(length, measureInsertTime(queue4, arr)));
+          fileWriter.write("Inserting %d entries into SortedLinkedPriorityQueue took %s\n".formatted(length, measureInsertTime(queue4, arr)));
           System.out.println("Removing elements from UnsortedArrayPriorityQueue...");
-          fileWriter.write("Removing %d entries from UnsortedArrayPriorityQueue took %s\n"
-                  .formatted(length, measureRemoveTime(queue1)));
+          fileWriter.write("Removing %d entries from UnsortedArrayPriorityQueue took %s\n".formatted(length, measureRemoveTime(queue1)));
           System.out.println("Removing elements from SortedArrayPriorityQueue...");
-          fileWriter.write("Removing %d entries from SortedArrayPriorityQueue took %s\n"
-                  .formatted(length, measureRemoveTime(queue2)));
+          fileWriter.write("Removing %d entries from SortedArrayPriorityQueue took %s\n".formatted(length, measureRemoveTime(queue2)));
           System.out.println("Removing elements from UnsortedLinkedPriorityQueue...");
-          fileWriter.write("Removing %d entries from UnsortedLinkedPriorityQueue took %s\n"
-                  .formatted(length, measureRemoveTime(queue3)));
+          fileWriter.write("Removing %d entries from UnsortedLinkedPriorityQueue took %s\n".formatted(length, measureRemoveTime(queue3)));
           System.out.println("Removing elements from SortedLinkedPriorityQueue...");
-          fileWriter.write("Removing %d entries from SortedLinkedPriorityQueue took %s\n"
-                  .formatted(length, measureRemoveTime(queue4)));
+          fileWriter.write("Removing %d entries from SortedLinkedPriorityQueue took %s\n".formatted(length, measureRemoveTime(queue4)));
      }
 
      public static void main(String[] args) throws IOException {
